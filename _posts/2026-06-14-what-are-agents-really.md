@@ -1,13 +1,18 @@
 ---
 layout: post
-title: "What Are Agents, Really?"
+title: "From AIMA’s Rational Agents to LLM Agents"
 date: 2026-06-14
 categories: [ai, agents]
 tags: [ai-agents, llm-agents, aima, reasoning, tooling]
 description: "A personal and technical reflection on how my understanding of agents evolved from AIMA’s classical definition to modern LLM agents."
 ---
 
-As someone with an engineering background, my first encounter with agents was in `CPE 471 (Artificial Intelligence I)` back in undergrad. The textbook for the course was *Artificial Intelligence: A Modern Approach* (AIMA), Third Edition, by Stuart Russell and Peter Norvig.
+<div class="post-epigraph">
+  <p>“An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators.”</p>
+  <p class="post-epigraph__attribution">— Russell and Norvig</p>
+</div>
+
+As someone with an engineering background, my first encounter with agents was in CPE 471 (Artificial Intelligence I) back in undergrad. The textbook for the course was *Artificial Intelligence: A Modern Approach* (AIMA), Third Edition, by Stuart Russell and Peter Norvig.
 
 AIMA presents four approaches to AI: **Thinking Humanly, Acting Humanly, Thinking Rationally, and Acting Rationally**.
 
