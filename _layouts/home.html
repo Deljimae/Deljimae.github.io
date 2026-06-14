@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="home-hero">
+  <p class="home-hero__eyebrow">Notes in public</p>
+  <h1 class="home-hero__title">Research notes on AI agents, memory, benchmarks, and tooling.</h1>
+  <p class="home-hero__text">
+    I write about how agent systems are built, evaluated, and remembered over time.
+  </p>
+</section>
+
+<section class="home-posts">
+  <h2 class="home-posts__title">Posts</h2>
+  <div class="post-list">
+    {% for post in site.posts %}
+      <article class="post-card">
+        <p class="post-card__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <h3 class="post-card__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        {% if post.description %}
+          <p class="post-card__desc">{{ post.description }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>

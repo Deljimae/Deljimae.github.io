@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post-article">
+  <header class="post-hero">
+    <div class="post-hero__eyebrow">Research notes on AI agents</div>
+    <div class="post-hero__grid">
+      <div class="post-hero__meta">
+        <p class="post-date">{{ page.date | date: "%b %-d, %Y" }}</p>
+      </div>
+      <div class="post-hero__main">
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.description %}
+          <p class="post-description">{{ page.description }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="post-body prose">
+    {{ content }}
+  </div>
+</article>
