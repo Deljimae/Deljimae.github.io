@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font: 700 28px Georgia, serif; fill: #111827; }
+    .label { font: 700 24px Georgia, serif; fill: #111827; }
+    .body { font: 400 20px Georgia, serif; fill: #374151; }
+    .small { font: 400 18px Georgia, serif; fill: #4b5563; }
+    .box { stroke: #111827; stroke-width: 3; }
+    .agent { fill: #e0f2fe; }
+    .env { fill: #ecfccb; }
+    .core { fill: #ffffff; }
+    .line { stroke: #111827; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    .caption { font: 400 18px Georgia, serif; fill: #4b5563; }
+  </style>
+
+  <text x="60" y="45" class="title">Agent, Environment, Sensors, and Actuators</text>
+
+  <rect x="120" y="100" rx="30" ry="30" width="650" height="360" class="box agent"/>
+  <rect x="860" y="120" rx="30" ry="30" width="200" height="320" class="box env"/>
+  <rect x="365" y="225" width="160" height="110" class="box core"/>
+
+  <text x="170" y="150" class="label">Agent</text>
+  <text x="915" y="285" class="label" transform="rotate(90 915 285)">Environment</text>
+  <text x="427" y="288" text-anchor="middle" class="label">Decision</text>
+  <text x="427" y="318" text-anchor="middle" class="body">Core</text>
+
+  <text x="360" y="180" class="body">Sensors</text>
+  <text x="330" y="385" class="body">Actuators</text>
+
+  <path d="M860 190 C760 190, 690 190, 575 190" class="line"/>
+  <text x="700" y="170" class="small">Percepts / Observations</text>
+
+  <path d="M525 390 C690 390, 760 390, 860 390" class="line"/>
+  <text x="700" y="370" class="small">Actions</text>
+
+  <path d="M427 195 L427 225" class="line"/>
+  <path d="M427 335 L427 365" class="line"/>
+
+  <text x="60" y="535" class="caption">A simplified version of the classical agent-environment interaction diagram.</text>
+  <text x="60" y="565" class="caption">Adapted from Russell and Norvig, <tspan font-style="italic">Artificial Intelligence: A Modern Approach</tspan> (3rd ed.).</text>
+</svg>

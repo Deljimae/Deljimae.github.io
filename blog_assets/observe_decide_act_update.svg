@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font: 700 28px Georgia, serif; fill: #111827; }
+    .label { font: 700 24px Georgia, serif; fill: #111827; }
+    .caption { font: 400 18px Georgia, serif; fill: #4b5563; }
+    .step1 { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 3; }
+    .step2 { fill: #ede9fe; stroke: #6d28d9; stroke-width: 3; }
+    .step3 { fill: #dcfce7; stroke: #15803d; stroke-width: 3; }
+    .step4 { fill: #fef3c7; stroke: #b45309; stroke-width: 3; }
+    .line { stroke: #111827; stroke-width: 3; fill: none; marker-end: url(#arrow2); }
+  </style>
+
+  <text x="60" y="42" class="title">A Simple Agent Loop</text>
+
+  <rect x="70" y="90" rx="18" ry="18" width="220" height="70" class="step1"/>
+  <rect x="350" y="90" rx="18" ry="18" width="220" height="70" class="step2"/>
+  <rect x="630" y="90" rx="18" ry="18" width="220" height="70" class="step3"/>
+  <rect x="910" y="90" rx="18" ry="18" width="220" height="70" class="step4"/>
+
+  <text x="180" y="133" text-anchor="middle" class="label">Observe</text>
+  <text x="460" y="133" text-anchor="middle" class="label">Decide</text>
+  <text x="740" y="133" text-anchor="middle" class="label">Act</text>
+  <text x="1020" y="133" text-anchor="middle" class="label">Update</text>
+
+  <path d="M290 125 L350 125" class="line"/>
+  <path d="M570 125 L630 125" class="line"/>
+  <path d="M850 125 L910 125" class="line"/>
+  <path d="M1020 160 C1020 220, 180 220, 180 160" class="line"/>
+
+  <text x="60" y="220" class="caption">Observe the environment, decide what to do, act, then update based on new feedback.</text>
+</svg>
