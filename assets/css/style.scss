@@ -110,6 +110,15 @@ a:hover {
   margin: 0 0 18px;
 }
 
+.home-hero__name {
+  margin: 0 0 10px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
 .post-hero__grid {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -298,9 +307,40 @@ a:hover {
   max-width: 940px;
 }
 
+.home-interests {
+  margin-top: 26px;
+  padding: 18px 0 34px;
+  border-bottom: 1px solid var(--line);
+}
+
+.home-interests__label {
+  margin: 0 0 12px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.96rem;
+  color: var(--muted);
+}
+
+.home-interests__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.home-interests__list span {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
 .home-posts {
   border-top: 1px solid var(--line);
-  margin-top: 36px;
+  margin-top: 28px;
 }
 
 .home-posts__title {
