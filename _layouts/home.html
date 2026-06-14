@@ -2,36 +2,56 @@
 layout: default
 ---
 
-<section class="home-hero">
-  <p class="home-hero__eyebrow">Notes in public</p>
-  <p class="home-hero__name">Ayodeji Lana</p>
-  <h1 class="home-hero__title">Research notes on AI agents, memory, benchmarks, and tooling.</h1>
-  <p class="home-hero__text">
-    I am an independent researcher with an engineering background, writing in public about AI agents, evaluation, memory architectures, and tool-augmented systems as I learn and build.
-  </p>
-</section>
+<section class="home-hero home-hero--profile">
+  <div class="home-hero__inner">
+    <div class="home-hero__copy">
+      <p class="home-hero__eyebrow">Ayodeji Lana</p>
+      <h1 class="home-hero__name">Ayodeji<br>Lana</h1>
 
-<section class="home-interests">
-  <p class="home-interests__label">Research interests</p>
-  <div class="home-interests__list">
-    <span>LLM Agents</span>
-    <span>LLM Evaluation</span>
+      <div class="home-hero__text">
+        <p><strong>Hi, I am Ayodeji,</strong></p>
+        <p>
+          An independent researcher with an engineering background, writing in public
+          about AI agents, memory, evaluation, and tooling.
+        </p>
+      </div>
+
+      <div class="home-interests">
+        <p class="home-interests__label">Research interests</p>
+        <ul class="home-interests__list">
+          <li>LLM Agents</li>
+          <li>LLM Evaluation</li>
+        </ul>
+      </div>
+
+      <div class="home-links" aria-label="Profile links">
+        <a href="https://github.com/Deljimae" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/ayodeji-lana-17a342267/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="home-posts">
-  <h2 class="home-posts__title">Posts</h2>
+  <div class="home-posts__header">
+    <p class="home-posts__eyebrow">Writing</p>
+    <h2>Notes and essays</h2>
+  </div>
+
   <div class="post-list">
-    {% for post in site.posts %}
-      <article class="post-card">
-        <p class="post-card__date">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <h3 class="post-card__title">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h3>
-        {% if post.description %}
-          <p class="post-card__desc">{{ post.description }}</p>
-        {% endif %}
-      </article>
-    {% endfor %}
+    {% assign posts_list = site.posts %}
+    {% if posts_list and posts_list.size > 0 %}
+      {% for post in posts_list %}
+        <article class="post-card">
+          <p class="post-card__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% if post.excerpt %}
+            <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    {% else %}
+      <p class="home-empty">Posts will appear here as they are published.</p>
+    {% endif %}
   </div>
 </section>
