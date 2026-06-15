@@ -2,55 +2,64 @@
 layout: default
 ---
 
-<section class="home-hero home-hero--profile">
-  <div class="home-hero__inner">
-    <div class="home-hero__copy">
-      <h1 class="home-hero__name">Ayodeji<br>Lana</h1>
-
-      <div class="home-hero__text">
-        <p><strong>Hi, I am Ayodeji,</strong></p>
-        <p>
-          An independent researcher with an engineering background, writing in public
-          about AI agents, memory, evaluation, and tooling.
+<main class="home-shell">
+  <section class="home-stage">
+    <div class="home-stage__grid">
+      <div class="home-stage__lead">
+        <p class="home-stage__eyebrow">Independent researcher</p>
+        <h1 class="home-stage__name">Ayodeji Lana</h1>
+        <p class="home-stage__intro">
+          I write in public about AI agents, memory, evaluation, and tooling from
+          an engineering-first perspective.
         </p>
+
+        <div class="home-stage__links" aria-label="Profile links">
+          <a href="https://github.com/Deljimae" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/ayodeji-lana-17a342267/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </div>
 
-      <div class="home-interests">
-        <p class="home-interests__label">Research interests</p>
-        <ul class="home-interests__list">
-          <li>LLM Agents</li>
-          <li>LLM Evaluation</li>
-        </ul>
-      </div>
+      <aside class="home-stage__panel" aria-label="Research overview">
+        <div class="home-panel__block">
+          <p class="home-panel__label">Research interests</p>
+          <ul class="home-panel__tags">
+            <li>LLM Agents</li>
+            <li>LLM Evaluation</li>
+          </ul>
+        </div>
 
-      <div class="home-links" aria-label="Profile links">
-        <a href="https://github.com/Deljimae" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/ayodeji-lana-17a342267/" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
+        <div class="home-panel__block">
+          <p class="home-panel__label">This site</p>
+          <p class="home-panel__text">
+            Reading notes, paper breakdowns, and short essays on how modern agents
+            are built, evaluated, and made useful in real environments.
+          </p>
+        </div>
+      </aside>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="home-posts">
-  <div class="home-posts__header">
-    <p class="home-posts__eyebrow">Writing</p>
-    <h2>Notes and essays</h2>
-  </div>
+  <section class="home-writing">
+    <div class="home-writing__header">
+      <p class="home-writing__eyebrow">Writing</p>
+      <h2>Notes and essays</h2>
+    </div>
 
-  <div class="post-list">
-    {% assign posts_list = site.posts %}
-    {% if posts_list and posts_list.size > 0 %}
-      {% for post in posts_list %}
-        <article class="post-card">
-          <p class="post-card__date">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          {% if post.excerpt %}
-            <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    {% else %}
-      <p class="home-empty">Posts will appear here as they are published.</p>
-    {% endif %}
-  </div>
-</section>
+    <div class="home-writing__list">
+      {% assign posts_list = site.posts %}
+      {% if posts_list and posts_list.size > 0 %}
+        {% for post in posts_list %}
+          <article class="home-writing__item">
+            <p class="home-writing__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.excerpt %}
+              <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      {% else %}
+        <p class="home-writing__empty">Posts will appear here as they are published.</p>
+      {% endif %}
+    </div>
+  </section>
+</main>
