@@ -1,45 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
-  <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 z" fill="#111827"/>
-    </marker>
-  </defs>
-  <style>
-    .title { font: 700 28px Georgia, serif; fill: #111827; }
-    .label { font: 700 24px Georgia, serif; fill: #111827; }
-    .body { font: 400 20px Georgia, serif; fill: #374151; }
-    .small { font: 400 18px Georgia, serif; fill: #4b5563; }
-    .box { stroke: #111827; stroke-width: 3; }
-    .agent { fill: #e0f2fe; }
-    .env { fill: #ecfccb; }
-    .core { fill: #ffffff; }
-    .line { stroke: #111827; stroke-width: 3; fill: none; marker-end: url(#arrow); }
-    .caption { font: 400 18px Georgia, serif; fill: #4b5563; }
-  </style>
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Agent, Environment, Sensors, and Actuators</title>
+  <desc id="desc">A simplified agent-environment interaction loop showing observations entering the agent through sensors and actions leaving through actuators.</desc>
 
-  <text x="60" y="45" class="title">Agent, Environment, Sensors, and Actuators</text>
+  <rect width="1200" height="760" rx="28" fill="#FFFDF8"/>
 
-  <rect x="120" y="100" rx="30" ry="30" width="650" height="360" class="box agent"/>
-  <rect x="860" y="120" rx="30" ry="30" width="200" height="320" class="box env"/>
-  <rect x="365" y="225" width="160" height="110" class="box core"/>
+  <rect x="84" y="122" width="660" height="432" rx="28" fill="#DCECF8" stroke="#23212B" stroke-width="4"/>
+  <rect x="840" y="158" width="220" height="360" rx="26" fill="#E8F8BA" stroke="#23212B" stroke-width="4"/>
+  <rect x="350" y="278" width="170" height="124" fill="#FFFDFC" stroke="#23212B" stroke-width="3"/>
 
-  <text x="170" y="150" class="label">Agent</text>
-  <text x="915" y="285" class="label" transform="rotate(90 915 285)">Environment</text>
-  <text x="427" y="288" text-anchor="middle" class="label">Decision</text>
-  <text x="427" y="318" text-anchor="middle" class="body">Core</text>
+  <text x="132" y="190" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Agent</text>
+  <text x="388" y="336" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">Decision</text>
+  <text x="420" y="372" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="22">Core</text>
 
-  <text x="360" y="180" class="body">Sensors</text>
-  <text x="330" y="385" class="body">Actuators</text>
+  <text x="118" y="640" fill="#6F6559" font-family="Georgia, 'Times New Roman', serif" font-size="17">
+    A simplified version of the classical agent-environment interaction diagram.
+  </text>
+  <text x="118" y="668" fill="#6F6559" font-family="Georgia, 'Times New Roman', serif" font-size="17">
+    Adapted from Russell and Norvig, Artificial Intelligence: A Modern Approach (3rd ed.).
+  </text>
 
-  <path d="M860 190 C760 190, 690 190, 575 190" class="line"/>
-  <text x="700" y="170" class="small">Percepts / Observations</text>
+  <line x1="840" y1="340" x2="520" y2="340" stroke="#23212B" stroke-width="4"/>
+  <polygon points="522,340 560,320 560,360" fill="#23212B"/>
+  <text x="540" y="302" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="18">Percepts / Observations</text>
 
-  <path d="M525 390 C690 390, 760 390, 860 390" class="line"/>
-  <text x="700" y="370" class="small">Actions</text>
+  <line x1="520" y1="476" x2="840" y2="476" stroke="#23212B" stroke-width="4"/>
+  <polygon points="838,476 800,456 800,496" fill="#23212B"/>
+  <text x="620" y="452" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="18">Actions</text>
 
-  <path d="M427 195 L427 225" class="line"/>
-  <path d="M427 335 L427 365" class="line"/>
+  <line x1="435" y1="210" x2="435" y2="278" stroke="#23212B" stroke-width="4"/>
+  <polygon points="435,276 417,240 453,240" fill="#23212B"/>
+  <text x="410" y="248" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="18">Sensors</text>
 
-  <text x="60" y="535" class="caption">A simplified version of the classical agent-environment interaction diagram.</text>
-  <text x="60" y="565" class="caption">Adapted from Russell and Norvig, <tspan font-style="italic">Artificial Intelligence: A Modern Approach</tspan> (3rd ed.).</text>
+  <line x1="435" y1="402" x2="435" y2="470" stroke="#23212B" stroke-width="4"/>
+  <polygon points="435,468 417,432 453,432" fill="#23212B"/>
+  <text x="382" y="454" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="18">Actuators</text>
+
+  <g transform="translate(944 338) rotate(90)">
+    <text x="0" y="0" text-anchor="middle" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="700">Environment</text>
+  </g>
 </svg>
