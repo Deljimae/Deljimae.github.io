@@ -1,42 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
-  <style>
-    .title { font: 700 28px Georgia, serif; fill: #111827; }
-    .cellhead { font: 700 24px Georgia, serif; fill: #111827; }
-    .body { font: 400 20px Georgia, serif; fill: #374151; }
-    .caption { font: 400 18px Georgia, serif; fill: #4b5563; }
-    .small { font: 400 17px Georgia, serif; fill: #4b5563; }
-    .frame { fill: #ffffff; stroke: #111827; stroke-width: 3; }
-    .line { stroke: #111827; stroke-width: 2.5; }
-    .shade1 { fill: #f8fafc; }
-    .shade2 { fill: #f1f5f9; }
-  </style>
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Four Classical Approaches to Artificial Intelligence</title>
+  <desc id="desc">A four-quadrant diagram summarizing Thinking Humanly, Thinking Rationally, Acting Humanly, and Acting Rationally.</desc>
 
-  <rect x="60" y="70" width="1080" height="560" class="frame"/>
-  <rect x="60" y="70" width="540" height="280" class="shade1"/>
-  <rect x="600" y="70" width="540" height="280" class="shade2"/>
-  <rect x="60" y="350" width="540" height="280" class="shade2"/>
-  <rect x="600" y="350" width="540" height="280" class="shade1"/>
+  <rect width="1200" height="760" rx="28" fill="#FFFDF8"/>
+  <rect x="34" y="34" width="1132" height="692" rx="22" fill="#FFFCF5" stroke="#D8CFC0" stroke-width="2"/>
 
-  <line x1="600" y1="70" x2="600" y2="630" class="line"/>
-  <line x1="60" y1="350" x2="1140" y2="350" class="line"/>
+  <text x="82" y="108" fill="#161311" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">
+    Four Classical Approaches to Artificial Intelligence
+  </text>
 
-  <text x="90" y="120" class="cellhead">Thinking Humanly</text>
-  <text x="90" y="165" class="body">Making machines think in ways associated with human thought,</text>
-  <text x="90" y="198" class="body">such as learning, problem solving, and decision-making.</text>
+  <rect x="82" y="146" width="504" height="250" fill="#F7F1E5" stroke="#3B342C" stroke-width="2"/>
+  <rect x="586" y="146" width="504" height="250" fill="#F2F6FA" stroke="#3B342C" stroke-width="2"/>
+  <rect x="82" y="396" width="504" height="250" fill="#F8F3EA" stroke="#3B342C" stroke-width="2"/>
+  <rect x="586" y="396" width="504" height="250" fill="#F7F4EE" stroke="#3B342C" stroke-width="2"/>
 
-  <text x="630" y="120" class="cellhead">Thinking Rationally</text>
-  <text x="630" y="165" class="body">Studying the computations that make it possible to perceive,</text>
-  <text x="630" y="198" class="body">reason, and act according to principled models of intelligence.</text>
+  <g fill="#171412" font-family="Georgia, 'Times New Roman', serif">
+    <text x="112" y="196" font-size="24" font-weight="700">Thinking Humanly</text>
+    <text x="112" y="244" font-size="16" font-weight="400">
+      <tspan x="112" dy="0">Making machines think in ways associated</tspan>
+      <tspan x="112" dy="30">with human thought, such as learning,</tspan>
+      <tspan x="112" dy="30">problem solving, and decision-making.</tspan>
+    </text>
 
-  <text x="90" y="400" class="cellhead">Acting Humanly</text>
-  <text x="90" y="445" class="body">Building machines that behave in ways that appear intelligent</text>
-  <text x="90" y="478" class="body">when compared with how people would perform the same tasks.</text>
+    <text x="616" y="196" font-size="24" font-weight="700">Thinking Rationally</text>
+    <text x="616" y="244" font-size="16" font-weight="400">
+      <tspan x="616" dy="0">Studying the computations that make it</tspan>
+      <tspan x="616" dy="30">possible to perceive, reason, and act</tspan>
+      <tspan x="616" dy="30">according to principled models of</tspan>
+      <tspan x="616" dy="30">intelligence.</tspan>
+    </text>
 
-  <text x="630" y="400" class="cellhead">Acting Rationally</text>
-  <text x="630" y="445" class="body">Designing intelligent agents that choose actions expected</text>
-  <text x="630" y="478" class="body">to achieve good outcomes given what they perceive and know.</text>
+    <text x="112" y="446" font-size="24" font-weight="700">Acting Humanly</text>
+    <text x="112" y="494" font-size="16" font-weight="400">
+      <tspan x="112" dy="0">Building machines that behave in ways</tspan>
+      <tspan x="112" dy="30">that appear intelligent when compared</tspan>
+      <tspan x="112" dy="30">with how people would perform the same</tspan>
+      <tspan x="112" dy="30">tasks.</tspan>
+    </text>
 
-  <text x="60" y="42" class="title">Four Classical Approaches to Artificial Intelligence</text>
-  <text x="60" y="685" class="caption">Adapted from Russell and Norvig, <tspan font-style="italic">Artificial Intelligence: A Modern Approach</tspan> (3rd ed.).</text>
-  <text x="60" y="715" class="small">This simplified version is redrawn for explanatory use in a blog post.</text>
+    <text x="616" y="446" font-size="24" font-weight="700">Acting Rationally</text>
+    <text x="616" y="494" font-size="16" font-weight="400">
+      <tspan x="616" dy="0">Designing intelligent agents that choose</tspan>
+      <tspan x="616" dy="30">actions expected to achieve good</tspan>
+      <tspan x="616" dy="30">outcomes given what they perceive</tspan>
+      <tspan x="616" dy="30">and know.</tspan>
+    </text>
+  </g>
+
+  <text x="82" y="692" fill="#6F6559" font-family="Georgia, 'Times New Roman', serif" font-size="15">
+    Adapted from Russell and Norvig, Artificial Intelligence: A Modern Approach.
+  </text>
 </svg>
