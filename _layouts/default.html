@@ -1,35 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if page.title %}{{ page.title }} | Ayodeji Lana{% else %}Ayodeji Lana{% endif %}</title>
+    <meta
+      name="description"
+      content="{% if page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}Research notes on AI agents, memory, evaluation, and tooling.{% endif %}"
+    />
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
     <link rel="shortcut icon" href="{{ '/assets/favicon.svg' | relative_url }}" />
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <div class="site-header__inner">
-          <a class="site-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-          <nav class="site-nav" aria-label="Main navigation">
-            <a href="{{ '/' | relative_url }}">Home</a>
-          </nav>
-        </div>
-      </header>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}">Ayodeji Lana</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="{{ '/' | relative_url }}">Home</a>
+        </nav>
+      </div>
+    </header>
 
-      <main class="site-main">
-        {{ content }}
-      </main>
+    <main class="site-main">
+      {{ content }}
+    </main>
 
-      <footer class="site-footer">
-        <div class="site-footer__inner">
-          <div class="site-footer__brand">{{ site.title }}</div>
-          <div class="site-footer__text">{{ site.description }}</div>
-        </div>
-      </footer>
-    </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; 2026 Ayodeji Lana. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
