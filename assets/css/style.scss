@@ -1154,13 +1154,13 @@ body .post-header h1 {
   font-size: clamp(2.75rem, 5.8vw, 4.35rem) !important;
   line-height: 0.96 !important;
   letter-spacing: -0.055em !important;
-  max-width: 11ch !important;
+  max-width: 16ch !important;
   margin-bottom: 1rem !important;
 }
 
 body .post-hero__dek,
 body .post-hero p {
-  max-width: 18ch !important;
+  max-width: 34rem !important;
 }
 
 body .post-figure img,
@@ -1197,7 +1197,7 @@ body .post-content img[src*="aima_four_approaches.svg"] {
   body .post-hero h1,
   body .post-header h1 {
     font-size: clamp(2.2rem, 12vw, 3.05rem) !important;
-    max-width: 10ch !important;
+    max-width: 12ch !important;
   }
 }
 

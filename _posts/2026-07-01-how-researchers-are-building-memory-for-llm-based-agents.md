@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How researchers are building Memory for LLM-Based Agents"
-date: 2026-06-30
+date: 2026-07-01
 categories: [ai, memory]
 tags: [agent-memory, llm-agents, memory-architectures, long-context, evaluation]
 description: "A technical reflection on how researchers are building memory for LLM-based agents, from textual memory systems to more internal and parametric approaches."
@@ -86,6 +86,8 @@ Its architecture has three main parts:
 - **Residual SideNet:** a lightweight trainable network that retrieves and fuses memory for current generation
 
 In simple terms, LongMem lets an LLM use long past context by storing previous segments as cached attention key-value pairs and using a lightweight SideNet to retrieve and fuse those memories during current language modeling.
+
+## My Thoughts
 
 Taken together, these papers show that researchers are building memory for LLM-based agents in meaningfully different ways. While the problem looks similar, their approaches to solving it are quite different. The design choice seems to depend not only on what task the agent is meant to solve, but also on what the designer wants to optimize for, such as interpretability, temporal grounding, relational reasoning, or retrieval precision. This is also reflected in the kinds of benchmarks used to evaluate them.
 
