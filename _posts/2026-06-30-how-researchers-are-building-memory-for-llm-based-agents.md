@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How researchers are building Memory for LLM-Based Agents"
-date: 2026-07-01
+date: 2026-06-30
 categories: [ai, memory]
 tags: [agent-memory, llm-agents, memory-architectures, long-context, evaluation]
 description: "A technical reflection on how researchers are building memory for LLM-based agents, from textual memory systems to more internal and parametric approaches."
